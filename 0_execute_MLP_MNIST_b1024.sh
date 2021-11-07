@@ -18,7 +18,7 @@ do
     	echo "methods=${methods[$i]}"
     	echo "learningRates=${lrs[$j]}"
    	echo "nolayerinear=${layers[$j]}"
-   	th exp_MLP_MNIST_debug.lua -model ${methods[$i]} -learningRate ${lrs[$j]} -layer ${layers[$k]} -seed 1 -batchSize 1024 -max_epoch 80
+   	/content/distro/install/bin/th exp_MLP_MNIST_debug.lua -model ${methods[$i]} -learningRate ${lrs[$j]} -layer ${layers[$k]} -seed 1 -batchSize 1024 -max_epoch 80
       done
    done
 done
